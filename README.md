@@ -3,9 +3,9 @@ Using UAV remote sensing, particularly multispectral imagery, to detect planted 
  
 The initial workflow (detailed below) requires three tools:
 <ul>
-  <li>*Cluster_attributing* - This imports clusters of vegetation, and attributes them with size, shape, texture and spectral characteristic.</li>
-  <li>*Cluster classification model - Tree_Nontree_RF&XGBoost* - this tool uses random forest and gradient boosting models to make predictions, based on the attributed characteristics above, about whether the vegetation cluster is a seedline or a non-seedling cluster of vegetation. The training data is built using the plots, where all seedlings were marked and attributed, therefore any non-marked clusters were attributed as non-seedlings. </li>
-  <li>*Classification model - Tree species_RF_only* - This tool is similar to the above tool, but gradient boosting is dropped due to overfitting. This tool predicts the species of each seedling cluster. The training data are the marked, identified trees from the plots.</li>
+  <li>**Cluster_attributing** - This imports clusters of vegetation, and attributes them with size, shape, texture and spectral characteristic.</li>
+  <li>**Cluster classification model - Tree_Nontree_RF&XGBoost** - this tool uses random forest and gradient boosting models to make predictions, based on the attributed characteristics above, about whether the vegetation cluster is a seedline or a non-seedling cluster of vegetation. The training data is built using the plots, where all seedlings were marked and attributed, therefore any non-marked clusters were attributed as non-seedlings. </li>
+  <li>**Classification model - Tree species_RF_only** - This tool is similar to the above tool, but gradient boosting is dropped due to overfitting. This tool predicts the species of each seedling cluster. The training data are the marked, identified trees from the plots.</li>
 </ul>
 
 WorkFlow:
